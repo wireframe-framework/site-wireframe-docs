@@ -402,7 +402,7 @@ main {
     background-color: var(--site-color-code-gray);
 }
 
-.footer a {
+.footer a:not(.button) {
     color: var(--site-color-light-gray);
 }
 
@@ -672,9 +672,18 @@ ol li:last-child::before {
     padding-left: .5rem;
 }
 
+.button--plain::after {
+    display: none;
+}
+
 .button--inverse {
     background-color: #fff;
-    color: var(--site-color-red);
+    color: var(--text-color);
+}
+
+.button--inverse:hover,
+.button--inverse:focus {
+    background-color: var(--site-color-light-gray);
 }
 
 /* Highlights */
