@@ -28,3 +28,7 @@ an issue to the [wireframe repository](https://github.com/teppokoivula/wireframe
 
 3. Now install ProcessWire by accessing the URL it lives in from your web browser. When
    the installer asks you to choose a site profile, choose the "Wireframe Docs Site Profile".
+
+## License
+
+This project is licensed under the Mozilla Public License Version 2.0.

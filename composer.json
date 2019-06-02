@@ -1,0 +1,20 @@
+{
+    "name": "wireframe-framework/site-wireframe-docs",
+    "type": "pw-site-profile",
+    "description": "ProcessWire site profile based on the documentation site for the wireframe output framework.",
+    "keywords": [ "site-profile", "framework", "processwire" ],
+    "homepage": "https://wireframe-framework.com",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Teppo Koivula",
+            "homepage": "https://wireframe-framework.com",
+            "email": "teppo@wireframe-framework.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "processwire/processwire": "^3.0",
+        "wireframe-framework/processwire-composer-installer": "*"
+    }
+}
