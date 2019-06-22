@@ -23,6 +23,7 @@ echo $wireframe->render([
     'site_name' => 'Lorem Ipsum',
     'lang' => 'en',
     'home' => $pages->get(1),
+    'menu' => $modules->get('MarkupMenu'),
     'body_class' => implode(array_filter([
         'template-' . ($wire->view->template ?: $page->template),
         $wire->view->template ? 'delegated-template-' . $page->template : '',
