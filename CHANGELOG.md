@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.9.4] - 2019-06-22
 
 ### Changed
-- Updated the required version of wireframe-framework/processwire-composer-installer.
+- Updated the required versions of wireframe-framework/processwire-composer-installer, MarkupMenu, and wireframe.
 
 ## [0.9.3] - 2019-06-22
 
