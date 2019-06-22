@@ -84,7 +84,7 @@ body::after {
     right: 0;
     bottom: 0;
     width: 100%;
-    background: url('../img/circuitry.png') center top / 100% no-repeat transparent;
+    background: url('../images/circuitry.png') center top / 100% no-repeat transparent;
     z-index: -1;
 }
 
