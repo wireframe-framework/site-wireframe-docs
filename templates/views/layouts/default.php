@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,900,900i&amp;subset=latin-ext">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
-        <link rel="stylesheet" href="<?= $config->urls->static ?>css/main.css">
+        <link rel="stylesheet" href="<?= $config->urls->resources ?>css/main.css">
 
         <?= $config->pagerHeadTags ?>
 
@@ -73,7 +73,7 @@
         </footer>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-        <script src="<?= $config->urls->static ?>js/main.js"></script>
+        <script src="<?= $config->urls->resources ?>js/main.js"></script>
             
     </body>
 
