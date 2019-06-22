@@ -47,6 +47,18 @@ $config->debug = false;
  */
 $config->defaultAdminTheme = 'AdminThemeUikit';
 
+/**
+ * MarkupMenu default options
+ *
+ * @var array
+ *
+ */
+$config->MarkupMenu = [
+    'templates' => [
+        'nav' => '<nav class="{classes} menu--{menu_class_modifier}" aria-label="{aria_label}">%s</nav>',
+    ],
+];
+
 
 /*** INSTALLER CONFIG ********************************************************************/
 
