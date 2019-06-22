@@ -14,8 +14,10 @@ an issue to the [wireframe repository](https://github.com/teppokoivula/wireframe
 ## Requirements
 
 - ProcessWire 3.0.112 or newer
-- wireframe module (included)
 - PHP 7.1 or newer
+- Composer
+
+*Other requirements, such as ProcessWire modules, are installed with Composer.*
 
 ## How to install
 
@@ -26,7 +28,9 @@ an issue to the [wireframe repository](https://github.com/teppokoivula/wireframe
    directories already there, like /site-default/, which is included with the PW core.
    You can leave them for now.
 
-3. Now install ProcessWire by accessing the URL it lives in from your web browser. When
+3. Go to the /site-wireframe-docs/ directory and run `composer install`.
+
+4. Now install ProcessWire by accessing the URL it lives in from your web browser. When
    the installer asks you to choose a site profile, choose the "Wireframe Docs Site Profile".
 
 ## License
