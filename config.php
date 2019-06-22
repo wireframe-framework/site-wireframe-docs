@@ -34,6 +34,17 @@ if(!defined("PROCESSWIRE")) die();
  */
 $config->debug = false;
 
+/**
+ * Default admin theme
+ * 
+ * Module name of default admin theme for guest and users that haven't already selected one
+ *
+ * Core options include: **AdminThemeDefault** or **AdminThemeReno** or **AdminThemeUikit**.
+ * Additional options will depend on what other 3rd party AdminTheme modules you have installed.
+ *
+ * @var string
+ *
+ */
 $config->defaultAdminTheme = 'AdminThemeUikit';
 
 
