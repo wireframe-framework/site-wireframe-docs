@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.3] - 2019-06-22
+
+### Changed
+- Switched Markup Simple Navigation to MarkupMenu.
+- Renamed site/templates/static/ to site/templates/resources and site/templates/static/img/ to site/templates/static/resources/images/.
+- Removed wireframe module directory from the repository and readded it as a Composer dependency.
+
 ## [0.9.2] - 2019-06-02
 
 ### Added
