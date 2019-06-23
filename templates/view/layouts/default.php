@@ -50,7 +50,7 @@
                 <?php include $partials->menu->top ?>
             </div>
         </header>
-        
+
         <main>
             <?php include $partials->menu->breadcrumbs ?>
             <div id="content">
@@ -63,7 +63,7 @@
                 </aside>
             <?php endif; ?>
         </main>
-        
+
         <footer class="footer">
             <div class="footer__columns">
                 <div class="footer__column"><?= $home->footer_1 ?></div>
@@ -71,10 +71,10 @@
             </div>
             <div class="footer__column footer__column--full"><?= $home->footer_3 ?></div>
         </footer>
-        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
         <script src="<?= $config->urls->resources ?>js/main.js"></script>
-            
+
     </body>
 
 </html>

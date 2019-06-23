@@ -1,15 +1,15 @@
 <?php
 
-namespace wireframe\controller;
+namespace Wireframe\Controller;
 
-class WideBasicPageController extends \wireframe\Controller {
+class WideBasicPageController extends \Wireframe\Controller {
 
     /**
      * Init method
      */
     public function init() {
 
-        // For this template we want to use the view scripts of the basic-page
+        // For this template we want to use the view files of the basic-page
         // template, so we override the default template property with our own
         // one (basic-page).
         $this->view->setTemplate('basic-page');
