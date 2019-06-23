@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - .gitignore file based on the Bare Minimum Git project. Added default ignore for the modules directory.
 
+### Changed
+- Update Wireframe, MarkupMenu, and processwire-composer-installer dependencies to latest versions.
+
 ## [0.9.6] - 2019-06-23
 
 ### Added
