@@ -16,7 +16,7 @@
         "php": ">=7.1",
         "wireframe-framework/processwire-composer-installer": "^0.1",
         "teppokoivula/markup-menu": "^0.6",
-        "wireframe-framework/wireframe": "^0.1"
+        "wireframe-framework/wireframe": "^0.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
