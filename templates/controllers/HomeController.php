@@ -1,11 +1,11 @@
 <?php
 
-namespace wireframe\controller;
+namespace Wireframe\Controller;
 
 /**
  * HomeController is the Controller class for the home template
  */
-class HomeController extends \wireframe\Controller {
+class HomeController extends \Wireframe\Controller {
 
     /**
      * Init method
@@ -17,10 +17,10 @@ class HomeController extends \wireframe\Controller {
 
         // Alternative JSON view for the home template: when URL segment #1 is
         // set and the value is data.json, the page will be rendered using the
-        // json.php (/site/templates/views/scripts/home/json.php) view script,
-        // and without any layout file (we don't want "frames" for this view).
+        // json.php (/site/templates/view/views/home/json.php) view file, and
+        // without any layout file (we don't want "frames" for this view).
         if ($this->input->urlSegment1 === 'data.json') {
-            $this->view->setLayout(null)->setScript('json');
+            $this->view->setLayout(null)->setView('json');
         }
     }
 

@@ -658,7 +658,7 @@ INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('159', 
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('160', 'AdminThemeUikit', '10', '', '2019-01-03 21:34:44');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('161', 'ProcessLogger', '1', '', '2019-01-03 21:34:51');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('162', 'InputfieldIcon', '0', '', '2019-01-03 21:34:51');
-INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('165', 'wireframe', '1', '', '2019-01-03 21:45:27');
+INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('165', 'Wireframe', '1', '', '2019-01-03 21:45:27');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('166', 'FieldtypeRepeater', '35', '{\"repeatersRootPageID\":1015}', '2019-01-05 21:06:39');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('167', 'InputfieldRepeater', '0', '', '2019-01-05 21:06:39');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('168', 'FieldtypeFieldsetPage', '35', '{\"repeatersRootPageID\":1015}', '2019-01-05 21:07:03');
