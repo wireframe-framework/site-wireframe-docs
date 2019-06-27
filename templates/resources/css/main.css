@@ -65,7 +65,7 @@ td, th {
 
 /* Variables */
 
-body {
+:root {
     --max-layout-width: 80rem;
     --max-line-width: 80ch;
     --layout-spacing: 4rem;
@@ -82,6 +82,7 @@ body {
     --site-color-dark-gray: #373541;
     --site-color-light-gray: #eee;
     --site-color-code-gray: #1d1f21;
+    --site-color-deep-blue: #243b52;
     --site-color-dark-blue: #1e3348;
     --text-color: #333;
 }
@@ -137,6 +138,10 @@ main {
     }
 }
 
+#content {
+    min-width: 0%; /* IE11 */
+}
+
 /* Logo */
 
 .logo {
@@ -171,6 +176,7 @@ main {
     padding: var(--layout-spacing-half) 0;
     margin: 0 0 1rem 0;
     background-color: var(--site-color-dark-blue);
+    background: linear-gradient(90deg, var(--site-color-dark-blue) 0%, var(--site-color-deep-blue) 50%, var(--site-color-dark-blue) 100%);
 }
 
 .header__column {
@@ -241,6 +247,7 @@ main {
     border-bottom: 0;
 }
 
+.menu__item--parent,
 .menu__item--current {
     background: #fff;
     color: var(--text-color);
@@ -293,13 +300,14 @@ main {
     text-decoration: underline;
 }
 
+.menu--top .menu__item--parent,
 .menu--top .menu__item--current {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.menu--top .menu__item:not(.menu__item--current):hover,
-.menu--top .menu__item:not(.menu__item--current):focus {
+.menu--top .menu__item:not(.menu__item--current):not(.menu__item--parent):hover,
+.menu--top .menu__item:not(.menu__item--current):not(.menu__item--parent):focus {
     background-color: rgba(255,255,255,.15);
     text-decoration: none;
 }

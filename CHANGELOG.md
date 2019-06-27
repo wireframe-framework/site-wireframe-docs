@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.2] - 2019-06-27
+
+### Fixed
+- Backwards compatibility for IE11 with css-vars-ponyfill and some JavaScript magic.
+- Resolved minor issues related to menu active/parent and hover/focus styles.
+
+### Changed
+- Minor visual changes.
+
 ## [0.12.1] - 2019-06-26
 
 ### Fixed
