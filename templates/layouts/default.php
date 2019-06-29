@@ -1,10 +1,11 @@
+<?php namespace ProcessWire; ?>
 <!doctype html>
 <html lang="<?= $this->lang ?>">
 
     <head>
 
         <script>
-         document.documentElement.classList.add('js');
+        document.documentElement.classList.add('js');
         </script>
 
         <!-- metadata -->
@@ -36,6 +37,8 @@
     </head>
 
     <body class="<?= $body_class ?>" itemscope itemtype="http://schema.org/WebPage">
+
+        <a class="skip-link visually-hidden" href="#content"><?= __('Skip to content') ?></a>
 
         <a class="logo" href="<?= $home->url ?>">
             <?php if ($home->logo): ?>
@@ -75,6 +78,11 @@
             </div>
             <div class="footer__column footer__column--full"><?= $home->footer_3 ?></div>
         </footer>
+
+        <a id="top-link" class="button button--small button--inverse button--plain" href="#">
+            <span class="visually-hidden"><?= __('Back to top') ?></span>
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
         <script src="<?= $config->urls->resources ?>js/main.js"></script>

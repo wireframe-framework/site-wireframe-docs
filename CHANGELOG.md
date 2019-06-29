@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.13.0] - 2019-06-29
+
+### Added
+- To top link and skip content link.
+- New CSS variables and button classes.
+
+### Fixed
+- Various smaller layout and style fixes.
+
+### Changed
+- Reordered some parts of the CSS styles.
+
 ## [0.12.4] - 2019-06-27
 
 ### Changed
