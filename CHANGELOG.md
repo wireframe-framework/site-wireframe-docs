@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.13.1] - 2019-06-29
+
+### Fixed
+- Link hover/focus style fixes.
+
 ## [0.13.0] - 2019-06-29
 
 ### Added
