@@ -47,19 +47,6 @@ $config->debug = false;
  */
 $config->defaultAdminTheme = 'AdminThemeUikit';
 
-/**
- * MarkupMenu default options
- *
- * @var array
- *
- */
-$config->MarkupMenu = [
-    'templates' => [
-        'nav' => '<nav class="{classes} menu--{menu_class_modifier}" id="{menu_class_modifier}-menu" aria-label="{aria_label}">%s</nav>',
-        'item_current' => '<a class="{classes}" href="{item.url}" aria-label="' . __('Current page') . ': {item.title}">{item.title}</a>',
-    ],
-];
-
 
 /*** INSTALLER CONFIG ********************************************************************/
 
