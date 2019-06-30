@@ -19,23 +19,6 @@ an issue to the [wireframe repository](https://github.com/teppokoivula/wireframe
 
 *Other requirements, such as ProcessWire modules, are installed with Composer.*
 
-### Note about composer.json require order
-
-In case you're wondering why we have two ProcessWire Composer installers required – hari/pw-module
-and wireframe-framework/processwire-composer-installer – there's actually a good reason for this,
-even if it's a bit of a hack. First of all, here's how Composer install order works:
-
-* Composer doesn't let us define package install order, but it prioritizes Composer installers.
-* If multiple installers compete for one package, the installer installed or loaded later wins.
-
-Since this project depends on the ability of wireframe-framework/processwire-composer-installer to
-install packages via the site directory, we're telling Composer it that we need both installers –
-and because the one we actually need gets installed later, it overrides the first one, even for
-packages that define that one as a dependency.
-
-*Note: if you remove or alter the installer requirements, you may not be able to install modules
-from the site directory anymore.*
-
 ## How to install
 
 1. Obtain a fresh copy of ProcessWire 3.0.112 or newer and upload/unzip it on your server.
