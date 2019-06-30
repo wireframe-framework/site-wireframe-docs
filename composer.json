@@ -16,8 +16,8 @@
         "php": ">=7.1",
         "hari/pw-module": "^1.0.0",
         "wireframe-framework/processwire-composer-installer": "^1.0.0",
-        "teppokoivula/markup-menu": "^0.6",
-        "wireframe-framework/wireframe": "^0.2"
+        "teppokoivula/markup-menu": "^0.6.2",
+        "wireframe-framework/wireframe": "^0.2.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
