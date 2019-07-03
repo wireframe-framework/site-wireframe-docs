@@ -23,7 +23,7 @@ require_once 'lib/functions.php';
 
 // render the page
 echo $wireframe->render([
-    'site_name' => 'Lorem Ipsum',
+    'site_name' => 'Wireframe',
     'lang' => 'en',
     'home' => $pages->get(1),
     'menu' => $modules->get('MarkupMenu'),
