@@ -7,7 +7,7 @@
  * site settings here, and adjust Wireframe behaviour further with hooks placed in /site/ready.php.
  *
  * @version 0.2.0
- * @author Teppo Koivula <teppo.koivula@wireframe-framework.com>
+ * @author Teppo Koivula <teppo@wireframe-framework.com>
  * @license Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
  */
 
