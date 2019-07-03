@@ -122,6 +122,23 @@ img.align_right {
     }
 }
 
+/* Content tables */
+
+table {
+    margin-bottom: var(--layout-spacing-third);
+}
+
+th,
+td {
+    padding: .5rem;
+    font-size: .9rem;
+}
+
+th {
+    font-weight: bold;
+    background: var(--site-color-light-gray);
+}
+
 /* Utils */
 
 .visually-hidden {
