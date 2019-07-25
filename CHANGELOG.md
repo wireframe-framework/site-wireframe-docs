@@ -8,10 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Blockquote styles.
+- SearchEngine module, Search template, and controller and view for the Search template.
+- Blockquote CSS styles.
 
 ### Changed
-- Changed TextformatterCodeBlocks to be installed with Composer.
+- Install TextformatterCodeBlocks with Composer instead of bundling files in the site profile.
+
+### Fixed
+- Fixed minor layout issue resulting from main content area being less than 100% wide.
 
 ## [0.16.0] - 2019-07-07
 
