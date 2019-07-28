@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.0] - 2019-07-28
+
+### Added
+- Search form to the site masthead.
+- Additional utility CSS classes (.js-show, .js-hide).
+- JS toggle feature.
+
+### Changed
+- Moved SearchEngine styles to the `<head>` area.
+- Updated required version of the SearchEngine module in composer.json.
+- Updated the "menu-toggle" feature to a more generic "toggle" implementation.
+
 ## [0.17.0] - 2019-07-25
 
 ### Added

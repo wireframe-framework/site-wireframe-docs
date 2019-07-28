@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,900,900i&amp;subset=latin-ext">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
+        <?= $modules->get('SearchEngine')->renderStyles() ?>
         <link rel="stylesheet" href="<?= $config->urls->resources ?>css/main.css">
 
         <?= $config->pagerHeadTags ?>
@@ -40,13 +41,26 @@
 
         <a class="skip-link visually-hidden" href="#content"><?= __('Skip to content') ?></a>
 
-        <a class="logo" href="<?= $home->url ?>">
-            <?php if ($home->logo): ?>
-                <img src="<?= $home->logo->maxSize(480, 240)->url ?>" alt="<?= $home->logo->description ?>">
-            <?php else: ?>
-                <i class="fas fa-layer-group" aria-hidden="true"></i> <?= $site_name ?>
+        <div class="masthead">
+            <div class="masthead__column">
+                <a class="masthead__logo" href="<?= $home->url ?>">
+                    <?php if ($home->logo): ?>
+                        <img src="<?= $home->logo->maxSize(480, 240)->url ?>" alt="<?= $home->logo->description ?>">
+                    <?php else: ?>
+                        <i class="fas fa-layer-group" aria-hidden="true"></i> <?= $site_name ?>
+                    <?php endif; ?>
+                </a>
+                <button class="js-toggle js-toggle--search js-show" aria-controls="header-search-form" hidden>
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span class="visually-hidden"><?= __('Toggle header search form') ?></span>
+                </button>
+            </div>
+            <?php if ($search_form): ?>
+                <div class="masthead__search-form js-hide" id="header-search-form">
+                    <?= $search_form ?>
+                </div>
             <?php endif; ?>
-        </a>
+        </div>
 
         <?php include $partials->menu->mobile ?>
 
