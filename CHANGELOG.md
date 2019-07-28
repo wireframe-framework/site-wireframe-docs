@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.1] - 2019-07-28
+
+### Fixed
+- Restored .js-hide JS behaviour, which was unintentionally commented out.
+- As an accessibility improvement focus masthead search input after it has been toggled open.
+
 ## [0.18.0] - 2019-07-28
 
 ### Added

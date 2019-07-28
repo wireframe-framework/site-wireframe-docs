@@ -36,7 +36,7 @@ document.querySelectorAll('.js-show').forEach(function (item) {
 
 // JS hide
 document.querySelectorAll('.js-hide').forEach(function (item) {
-//    item.setAttribute('hidden', true);
+    item.setAttribute('hidden', true);
 });
 
 /**
@@ -55,6 +55,13 @@ function toggleTarget(target, toggle, hiddenState) {
     } else {
         target.classList.remove('js-hide');
         toggle.classList.add('js-toggle--active');
+        const focusAfter = toggle.getAttribute('data-focus-after');
+        if (focusAfter) {
+            const focusTarget = document.getElementById(focusAfter);
+            if (focusTarget) {
+                focusTarget.focus();
+            }
+        }
     }
 }
 
