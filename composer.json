@@ -17,8 +17,9 @@
         "wireframe-framework/processwire-composer-installer": "^1.0",
         "teppokoivula/markup-menu": "^0.6.2",
         "teppokoivula/textformatter-code-blocks": "^1.0",
-        "wireframe-framework/wireframe": "^0.4.0",
-        "teppokoivula/search-engine": "^0.8.1"
+        "wireframe-framework/wireframe": "^0.7.0",
+        "teppokoivula/search-engine": "^0.8.1",
+        "teppokoivula/admin-bar": "^2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
