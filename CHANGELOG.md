@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.19.0] - 2019-11-04
+
+### Added
+- AdminBar module.
+- JSON view for AJAX search feature.
+
+### Changed
+- Updated SearchEngine and Wireframe.
+
 ## [0.18.2] - 2019-08-02
 
 ### Fixed
