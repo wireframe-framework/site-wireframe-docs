@@ -1,4 +1,4 @@
-# --- WireDatabaseBackup {"time":"2019-07-25 22:20:08","user":"","dbName":"dev_wireframe_docs_profile","description":"","tables":[],"excludeTables":["pages_drafts","pages_roles","permissions","roles","roles_permissions","users","users_roles","user","role","permission"],"excludeCreateTables":[],"excludeExportTables":["field_roles","field_permissions","field_email","field_pass","caches","session_login_throttle","page_path_history"]}
+# --- WireDatabaseBackup {"time":"2019-11-04 19:33:19","user":"","dbName":"dev_site_wireframe_docs","description":"","tables":[],"excludeTables":["pages_drafts","pages_roles","permissions","roles","roles_permissions","users","users_roles","user","role","permission"],"excludeCreateTables":[],"excludeExportTables":["field_roles","field_permissions","field_email","field_pass","caches","session_login_throttle","page_path_history"]}
 
 DROP TABLE IF EXISTS `caches`;
 CREATE TABLE `caches` (
@@ -7,7 +7,7 @@ CREATE TABLE `caches` (
   `expires` datetime NOT NULL,
   PRIMARY KEY (`name`),
   KEY `expires` (`expires`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `field_admin_theme`;
 CREATE TABLE `field_admin_theme` (
@@ -15,7 +15,7 @@ CREATE TABLE `field_admin_theme` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_admin_theme` (`pages_id`, `data`) VALUES('41', '160');
 
@@ -26,7 +26,7 @@ CREATE TABLE `field_email` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `field_fieldset_tab_media`;
 CREATE TABLE `field_fieldset_tab_media` (
@@ -34,7 +34,7 @@ CREATE TABLE `field_fieldset_tab_media` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_fieldset_tab_media_end`;
@@ -43,7 +43,7 @@ CREATE TABLE `field_fieldset_tab_media_end` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_fieldset_tab_meta`;
@@ -52,7 +52,7 @@ CREATE TABLE `field_fieldset_tab_meta` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_fieldset_tab_meta_end`;
@@ -61,7 +61,7 @@ CREATE TABLE `field_fieldset_tab_meta_end` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_fieldset_tab_site_settings`;
@@ -70,7 +70,7 @@ CREATE TABLE `field_fieldset_tab_site_settings` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_fieldset_tab_site_settings_end`;
@@ -79,7 +79,7 @@ CREATE TABLE `field_fieldset_tab_site_settings_end` (
   `data` int(11) NOT NULL,
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_files`;
@@ -97,7 +97,7 @@ CREATE TABLE `field_files` (
   KEY `created` (`created`),
   FULLTEXT KEY `description` (`description`),
   FULLTEXT KEY `filedata` (`filedata`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_footer_1`;
@@ -107,7 +107,7 @@ CREATE TABLE `field_footer_1` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_footer_1` (`pages_id`, `data`) VALUES('1', '<h2>Lorem ipsum dolor sit amet</h2>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non justo ultrices, venenatis est nec, facilisis magna. Maecenas sollicitudin augue in justo interdum, vel consequat nunc imperdiet. Nullam accumsan lacus eu lacus vehicula, consectetur vestibulum eros sollicitudin.</p>\n\n<p>Donec ultricies urna vel purus convallis hendrerit. Morbi convallis finibus rutrum. Ut ultrices felis non molestie dignissim. Cras laoreet orci eget magna condimentum, vel feugiat elit sagittis.</p>');
 
@@ -118,7 +118,7 @@ CREATE TABLE `field_footer_2` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_footer_2` (`pages_id`, `data`) VALUES('1', '<h2>Pellentesque</h2>\n\n<p>Pellentesque vehicula tellus vel ex dapibus pulvinar. Curabitur eu vestibulum augue. Proin non neque erat. Suspendisse elit mauris, fermentum quis ultricies convallis.</p>\n\n<h2>Nam pharetra</h2>\n\n<p>Nam pharetra in elit sit amet vestibulum. Ut scelerisque malesuada orci, eget pellentesque felis finibus sed. Nulla vel mi ac erat venenatis.</p>');
 
@@ -129,7 +129,7 @@ CREATE TABLE `field_footer_3` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_footer_3` (`pages_id`, `data`) VALUES('1', '<p>Website © 2019 Lorem Ipsum – dolor sit amet, consectetur adipiscing elit</p>\n\n<p><small>Lorem Ipsum is Open Source, licensed under <a href=\"http://mozilla.org/MPL/2.0/\">Mozilla Public License v2.0</a></small></p>');
 
@@ -140,7 +140,7 @@ CREATE TABLE `field_headline` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_headline` (`pages_id`, `data`) VALUES('1', 'What is Lorem Ipsum?');
 INSERT INTO `field_headline` (`pages_id`, `data`) VALUES('1038', 'About Lorem Ipsum');
@@ -156,7 +156,7 @@ CREATE TABLE `field_highlights` (
   KEY `count` (`count`,`pages_id`),
   KEY `parent_id` (`parent_id`,`pages_id`),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_highlights` (`pages_id`, `data`, `count`, `parent_id`) VALUES('1', '1031,1032,1033,1040', '4', '1030');
 INSERT INTO `field_highlights` (`pages_id`, `data`, `count`, `parent_id`) VALUES('1019', '1035,1036', '2', '1034');
@@ -168,7 +168,7 @@ CREATE TABLE `field_icon` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_icon` (`pages_id`, `data`) VALUES('1031', 'layer-group');
 INSERT INTO `field_icon` (`pages_id`, `data`) VALUES('1032', 'sliders-h');
@@ -192,7 +192,7 @@ CREATE TABLE `field_images` (
   KEY `created` (`created`),
   FULLTEXT KEY `description` (`description`),
   FULLTEXT KEY `filedata` (`filedata`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_left`;
@@ -202,7 +202,7 @@ CREATE TABLE `field_left` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_logo`;
@@ -220,7 +220,7 @@ CREATE TABLE `field_logo` (
   KEY `created` (`created`),
   FULLTEXT KEY `description` (`description`),
   FULLTEXT KEY `filedata` (`filedata`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_main`;
@@ -230,7 +230,7 @@ CREATE TABLE `field_main` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_main` (`pages_id`, `data`) VALUES('27', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget purus ex. Curabitur commodo massa convallis urna fermentum, id consequat lectus consectetur. Ut id nisl gravida, finibus urna eget, dapibus est. Suspendisse a pulvinar lorem, eu eleifend arcu. Etiam eget nisi blandit, tincidunt purus at, feugiat erat.</p>');
 INSERT INTO `field_main` (`pages_id`, `data`) VALUES('1019', '<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>\n\n<p>Morbi convallis finibus rutrum. Ut ultrices felis non molestie dignissim. Cras laoreet orci eget magna condimentum, vel feugiat elit sagittis.</p>\n\n<p>Pellentesque vehicula tellus vel ex dapibus pulvinar. Curabitur eu vestibulum augue. Proin non neque erat. Suspendisse elit mauris, fermentum quis ultricies convallis, convallis eget massa. Vestibulum eu aliquet tortor. Quisque dictum dolor faucibus, dictum augue sit amet, semper massa. Etiam ac nulla pellentesque, tincidunt dui nec, sodales velit. Mauris ac risus et justo posuere congue quis vitae nisl. Praesent consectetur volutpat tempor. Donec tellus massa, condimentum sed rhoncus eget, suscipit ut mauris. Curabitur pharetra at nibh tempus sodales. Donec molestie arcu ac vulputate faucibus. Donec ac imperdiet elit, eu sollicitudin nisl. Sed molestie vulputate neque eget aliquam.</p>\n\n<p>Nam pharetra in elit sit amet vestibulum. Ut scelerisque malesuada orci, eget pellentesque felis finibus sed. Nulla vel mi ac erat venenatis mattis quis sit amet tellus. Ut eget est vel libero cursus maximus. Sed diam quam, malesuada a lorem ut, elementum efficitur lectus. Curabitur egestas sem quis turpis pharetra hendrerit. Aenean sed varius nunc. Vivamus suscipit tincidunt augue nec laoreet. Aliquam imperdiet accumsan egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>\n\n<p>Etiam imperdiet facilisis vestibulum. In eleifend lorem sed nisl euismod, at bibendum orci rutrum. Aliquam nibh nisl, ultrices molestie accumsan id, imperdiet ullamcorper dui. Duis non tellus vestibulum, posuere diam eu, rhoncus quam. Quisque facilisis tempus lorem, a faucibus neque tincidunt eu. Sed tortor quam, maximus ultrices pellentesque sed, rutrum et orci.</p>\n\n<p> </p>');
@@ -246,7 +246,7 @@ CREATE TABLE `field_meta_description` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_meta_keywords`;
@@ -256,7 +256,7 @@ CREATE TABLE `field_meta_keywords` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_meta_title`;
@@ -266,7 +266,7 @@ CREATE TABLE `field_meta_title` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_meta_title` (`pages_id`, `data`) VALUES('1', 'Lorem Ipsum – dolor sit amet, consectetur adipiscing elit');
 
@@ -286,7 +286,7 @@ CREATE TABLE `field_permissions` (
   `sort` int(10) unsigned NOT NULL,
   PRIMARY KEY (`pages_id`,`sort`),
   KEY `data` (`data`,`pages_id`,`sort`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `field_process`;
 CREATE TABLE `field_process` (
@@ -294,7 +294,7 @@ CREATE TABLE `field_process` (
   `data` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`pages_id`),
   KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_process` (`pages_id`, `data`) VALUES('6', '17');
 INSERT INTO `field_process` (`pages_id`, `data`) VALUES('3', '12');
@@ -327,7 +327,7 @@ CREATE TABLE `field_right` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `field_roles`;
@@ -337,7 +337,7 @@ CREATE TABLE `field_roles` (
   `sort` int(10) unsigned NOT NULL,
   PRIMARY KEY (`pages_id`,`sort`),
   KEY `data` (`data`,`pages_id`,`sort`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `field_search_index`;
 CREATE TABLE `field_search_index` (
@@ -346,7 +346,7 @@ CREATE TABLE `field_search_index` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_search_index` (`pages_id`, `data`) VALUES('1', 'Home What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non justo ultrices Donec non justo ultrices, venenatis est nec, facilisis magna. Maecenas sollicitudin augue Maecenas sollicitudin augue in justo interdum, vel consequat nunc imperdiet. Nullam accumsan lacus eu lacus vehicula? Nullam accumsan lacus eu lacus vehicula, consectetur vestibulum eros sollicitudin. Donec ultricies urna vel purus convallis hendrerit. Morbi convallis finibus rutrum. Ut ultrices felis non molestie dignissim. Cras laoreet orci eget magna condimentum, vel feugiat elit sagittis. Learn more about Lorem Ipsum Lorem Ipsum – dolor sit amet, consectetur adipiscing elit link:/wireframe-docs/about/');
 INSERT INTO `field_search_index` (`pages_id`, `data`) VALUES('1041', 'Why use Lorem Ipsum? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non justo ultrices, venenatis est nec, facilisis magna. Maecenas sollicitudin augue in justo interdum, vel consequat nunc imperdiet. Nullam accumsan lacus eu lacus vehicula, consectetur vestibulum eros sollicitudin. Donec ultricies urna vel purus convallis hendrerit! Morbi convallis finibus rutrum. Ut ultrices felis non molestie dignissim. Cras laoreet orci eget magna condimentum, vel feugiat elit sagittis. Pellentesque vehicula tellus vel ex dapibus pulvinar. Curabitur eu vestibulum augue. Proin non neque erat. Suspendisse elit mauris, fermentum quis ultricies convallis, convallis eget massa. Vestibulum eu aliquet tortor. Quisque dictum dolor faucibus, dictum augue sit amet, semper massa. Etiam ac nulla pellentesque, tincidunt dui nec, sodales velit. Mauris ac risus et justo posuere congue quis vitae nisl. Praesent consectetur volutpat tempor. Donec tellus massa, condimentum sed rhoncus eget, suscipit ut mauris. Curabitur pharetra at nibh tempus sodales. Donec molestie arcu ac vulputate faucibus. Donec ac imperdiet elit, eu sollicitudin nisl. Sed molestie vulputate neque eget aliquam. ');
@@ -363,7 +363,7 @@ CREATE TABLE `field_summary` (
   PRIMARY KEY (`pages_id`),
   KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_summary` (`pages_id`, `data`) VALUES('1', '<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>');
 INSERT INTO `field_summary` (`pages_id`, `data`) VALUES('1019', '<p>Donec non justo ultrices, venenatis est nec, facilisis magna. Maecenas sollicitudin augue in justo interdum, vel consequat nunc imperdiet. Nullam accumsan lacus eu lacus vehicula, consectetur vestibulum eros sollicitudin. Donec ultricies urna vel purus convallis hendrerit.</p>');
@@ -381,9 +381,9 @@ CREATE TABLE `field_title` (
   `pages_id` int(10) unsigned NOT NULL,
   `data` text NOT NULL,
   PRIMARY KEY (`pages_id`),
-  KEY `data_exact` (`data`(255)),
+  KEY `data_exact` (`data`(250)),
   FULLTEXT KEY `data` (`data`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `field_title` (`pages_id`, `data`) VALUES('11', 'Templates');
 INSERT INTO `field_title` (`pages_id`, `data`) VALUES('16', 'Fields');
@@ -444,6 +444,7 @@ INSERT INTO `field_title` (`pages_id`, `data`) VALUES('1046', 'why-use-wireframe
 INSERT INTO `field_title` (`pages_id`, `data`) VALUES('1047', 'about');
 INSERT INTO `field_title` (`pages_id`, `data`) VALUES('1063', 'Docs');
 INSERT INTO `field_title` (`pages_id`, `data`) VALUES('1074', 'Search');
+INSERT INTO `field_title` (`pages_id`, `data`) VALUES('1076', 'Use AdminBar');
 
 DROP TABLE IF EXISTS `fieldgroups`;
 CREATE TABLE `fieldgroups` (
@@ -451,7 +452,7 @@ CREATE TABLE `fieldgroups` (
   `name` varchar(250) CHARACTER SET ascii NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `fieldgroups` (`id`, `name`) VALUES('2', 'admin');
 INSERT INTO `fieldgroups` (`id`, `name`) VALUES('3', 'user');
@@ -470,15 +471,16 @@ CREATE TABLE `fieldgroups_fields` (
   `sort` int(11) unsigned NOT NULL DEFAULT '0',
   `data` text,
   PRIMARY KEY (`fieldgroups_id`,`fields_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('2', '2', '1', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('2', '1', '0', NULL);
-INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '97', '3', NULL);
+INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '3', '0', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '4', '2', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('4', '5', '0', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('5', '1', '0', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '92', '1', NULL);
-INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '3', '0', NULL);
+INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('3', '97', '3', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('83', '123', '13', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('1', '114', '22', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('1', '115', '21', NULL);
@@ -525,7 +527,6 @@ INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`)
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('99', '98', '3', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('99', '103', '4', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('99', '105', '5', NULL);
-INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('2', '2', '1', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('83', '102', '14', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('1', '1', '0', NULL);
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES('98', '122', '2', NULL);
@@ -560,7 +561,7 @@ CREATE TABLE `fields` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `type` (`type`)
-) ENGINE=MyISAM AUTO_INCREMENT=124 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=124 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `fields` (`id`, `type`, `name`, `flags`, `label`, `data`) VALUES('1', 'FieldtypePageTitle', 'title', '13', 'Title', '{\"required\":1,\"textformatters\":[\"TextformatterEntities\"],\"size\":0,\"maxlength\":255}');
 INSERT INTO `fields` (`id`, `type`, `name`, `flags`, `label`, `data`) VALUES('2', 'FieldtypeModule', 'process', '25', 'Process', '{\"description\":\"The process that is executed on this page. Since this is mostly used by ProcessWire internally, it is recommended that you don\'t change the value of this unless adding your own pages in the admin.\",\"collapsed\":1,\"required\":1,\"moduleTypes\":[\"Process\"],\"permanent\":1}');
@@ -602,7 +603,7 @@ CREATE TABLE `modules` (
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `class` (`class`)
-) ENGINE=MyISAM AUTO_INCREMENT=192 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=194 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('1', 'FieldtypeTextarea', '1', '', '2019-01-03 21:34:17');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('2', 'FieldtypeNumber', '0', '', '2019-01-03 21:34:17');
@@ -704,6 +705,7 @@ INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('171', 
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('172', 'PageFrontEdit', '2', '{\"inlineEditFields\":[110,111,115,100,117,98,118,99],\"inlineLimitPage\":\"1\",\"buttonLocation\":\"auto\",\"buttonType\":\"auto\",\"uninstall\":\"\",\"submit_save_module\":\"Submit\"}', '2019-01-20 18:43:27');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('189', 'MarkupMenu', '0', '', '2019-07-25 21:57:50');
 INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('190', 'SearchEngine', '3', '{\"indexed_fields\":[\"title\",\"headline\",\"summary\",\"main\",\"left\",\"right\",\"meta_description\",\"meta_keywords\",\"meta_title\",\"highlights\",\"images\",\"files\"],\"index_pages_now_selector\":\"\",\"index_field\":\"search_index\",\"override_compatible_fieldtypes\":\"\",\"compatible_fieldtypes\":[\"FieldtypeEmail\",\"FieldtypeDatetime\",\"FieldtypeText\",\"FieldtypeTextLanguage\",\"FieldtypeTextarea\",\"FieldtypeTextareaLanguage\",\"FieldtypePageTitle\",\"FieldtypePageTitleLanguage\",\"FieldtypeCheckbox\",\"FieldtypeInteger\",\"FieldtypeFloat\",\"FieldtypeURL\",\"FieldtypeModule\",\"FieldtypeFile\",\"FieldtypeImage\",\"FieldtypeSelector\",\"FieldtypeOptions\",\"FieldtypeRepeater\",\"FieldtypeRepeaterMatrix\",\"FieldtypePageTable\"],\"uninstall\":\"\",\"submit_save_module\":\"Submit\"}', '2019-07-25 22:00:08');
+INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES('192', 'AdminBar', '3', '{\"theme\":\"uikit\",\"custom_theme\":\"\",\"theme_uikit_img\":1,\"theme_uikit_icons\":\"30\",\"theme_uikit_user_icon\":\"default\",\"items_left\":[\"browse\",\"edit\",\"new\"],\"items_right\":[\"admin\",\"logout\"],\"user_items\":{\"admin\":\"admin\",\"profile\":\"profile\",\"logout\":\"logout\"},\"showModal\":1,\"uninstall\":\"\",\"submit_save_module\":\"Submit\"}', '2019-11-04 19:30:44');
 
 DROP TABLE IF EXISTS `pages`;
 CREATE TABLE `pages` (
@@ -726,10 +728,10 @@ CREATE TABLE `pages` (
   KEY `created` (`created`),
   KEY `status` (`status`),
   KEY `published` (`published`)
-) ENGINE=MyISAM AUTO_INCREMENT=1076 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1078 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('1', '0', '1', 'home', '9', '2019-07-25 22:07:37', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
-INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('2', '1', '2', 'processwire', '1035', '2019-07-25 21:56:07', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '7');
+INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('2', '1', '2', 'processwire', '1035', '2019-11-04 19:29:33', '40', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '7');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('3', '2', '2', 'page', '21', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('6', '3', '2', 'add', '21', '2019-01-03 21:35:00', '40', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '1');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('7', '1', '2', 'trash', '1039', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '8');
@@ -752,7 +754,7 @@ INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modif
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('36', '31', '5', 'page-view', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('37', '30', '4', 'guest', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('38', '30', '4', 'superuser', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '1');
-INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('41', '29', '3', 'admin', '1', '2019-07-25 21:56:07', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
+INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('41', '29', '3', 'admin', '1', '2019-11-04 19:29:33', '40', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '0');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('40', '29', '3', 'guest', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '2', '2019-01-03 21:34:17', '1');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('50', '31', '5', 'page-sort', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '5');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('51', '31', '5', 'page-template', '25', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '41', '2019-01-03 21:34:17', '6');
@@ -791,6 +793,7 @@ INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modif
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('1047', '1029', '2', 'for-page-1038', '17', '2019-05-05 11:01:50', '41', '2019-05-05 11:01:50', '41', '2019-05-05 11:01:50', '6');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('1063', '1', '45', 'docs', '1', '2019-07-25 22:07:37', '41', '2019-05-30 17:29:00', '41', '2019-05-30 17:29:12', '5');
 INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('1074', '1', '46', 'search', '1025', '2019-07-25 22:04:20', '41', '2019-07-25 22:04:13', '41', '2019-07-25 22:04:20', '6');
+INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modified`, `modified_users_id`, `created`, `created_users_id`, `published`, `sort`) VALUES('1076', '31', '5', 'adminbar', '1', '2019-11-04 19:30:44', '41', '2019-11-04 19:30:44', '41', '2019-11-04 19:30:44', '14');
 
 DROP TABLE IF EXISTS `pages_access`;
 CREATE TABLE `pages_access` (
@@ -799,7 +802,7 @@ CREATE TABLE `pages_access` (
   `ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`pages_id`),
   KEY `templates_id` (`templates_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('37', '2', '2019-01-03 21:34:17');
 INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('38', '2', '2019-01-03 21:34:17');
@@ -828,13 +831,14 @@ INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('1038', '1'
 INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('1040', '2', '2019-02-10 23:34:33');
 INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('1063', '1', '2019-05-30 17:29:00');
 INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('1074', '1', '2019-07-25 22:04:13');
+INSERT INTO `pages_access` (`pages_id`, `templates_id`, `ts`) VALUES('1076', '2', '2019-11-04 19:30:44');
 
 DROP TABLE IF EXISTS `pages_parents`;
 CREATE TABLE `pages_parents` (
   `pages_id` int(10) unsigned NOT NULL,
   `parents_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`pages_id`,`parents_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `pages_parents` (`pages_id`, `parents_id`) VALUES('2', '1');
 INSERT INTO `pages_parents` (`pages_id`, `parents_id`) VALUES('3', '1');
@@ -868,7 +872,7 @@ CREATE TABLE `pages_sortfields` (
   `pages_id` int(10) unsigned NOT NULL DEFAULT '0',
   `sortfield` varchar(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`pages_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS `session_login_throttle`;
@@ -877,7 +881,7 @@ CREATE TABLE `session_login_throttle` (
   `attempts` int(10) unsigned NOT NULL DEFAULT '0',
   `last_attempt` int(10) unsigned NOT NULL,
   PRIMARY KEY (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `templates`;
 CREATE TABLE `templates` (
@@ -890,18 +894,18 @@ CREATE TABLE `templates` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `fieldgroups_id` (`fieldgroups_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('2', 'admin', '2', '8', '0', '{\"useRoles\":1,\"parentTemplates\":[2],\"allowPageNum\":1,\"redirectLogin\":23,\"slashUrls\":1,\"noGlobal\":1,\"compile\":3,\"modified\":1564080830,\"ns\":\"ProcessWire\"}');
+INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('2', 'admin', '2', '8', '0', '{\"useRoles\":1,\"parentTemplates\":[2],\"allowPageNum\":1,\"redirectLogin\":23,\"slashUrls\":1,\"noGlobal\":1,\"compile\":3,\"modified\":1572888431,\"ns\":\"ProcessWire\"}');
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('3', 'user', '3', '8', '0', '{\"useRoles\":1,\"noChildren\":1,\"parentTemplates\":[2],\"slashUrls\":1,\"pageClass\":\"User\",\"noGlobal\":1,\"noMove\":1,\"noTrash\":1,\"noSettings\":1,\"noChangeTemplate\":1,\"nameContentTab\":1}');
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('4', 'role', '4', '8', '0', '{\"noChildren\":1,\"parentTemplates\":[2],\"slashUrls\":1,\"pageClass\":\"Role\",\"noGlobal\":1,\"noMove\":1,\"noTrash\":1,\"noSettings\":1,\"noChangeTemplate\":1,\"nameContentTab\":1}');
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('5', 'permission', '5', '8', '0', '{\"noChildren\":1,\"parentTemplates\":[2],\"slashUrls\":1,\"guestSearchable\":1,\"pageClass\":\"Permission\",\"noGlobal\":1,\"noMove\":1,\"noTrash\":1,\"noSettings\":1,\"noChangeTemplate\":1,\"nameContentTab\":1}');
-INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('1', 'home', '1', '0', '0', '{\"useRoles\":1,\"noParents\":1,\"urlSegments\":[\"data.json\"],\"slashUrls\":1,\"slashUrlSegments\":-1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-home title\",\"compile\":3,\"label\":\"Home\",\"modified\":1564081250,\"ns\":\"ProcessWire\",\"roles\":[37]}');
-INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('29', 'basic-page', '83', '0', '0', '{\"slashUrls\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-file-o title\",\"compile\":3,\"label\":\"Basic page\",\"modified\":1564080830,\"ns\":\"ProcessWire\"}');
+INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('1', 'home', '1', '0', '0', '{\"useRoles\":1,\"noParents\":1,\"urlSegments\":[\"data.json\"],\"slashUrls\":1,\"slashUrlSegments\":-1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-home title\",\"compile\":3,\"label\":\"Home\",\"modified\":1572888431,\"ns\":\"ProcessWire\",\"roles\":[37]}');
+INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('29', 'basic-page', '83', '0', '0', '{\"slashUrls\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-file-o title\",\"compile\":3,\"label\":\"Basic page\",\"modified\":1572888431,\"ns\":\"ProcessWire\"}');
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('44', 'repeater_highlights', '98', '8', '0', '{\"noChildren\":1,\"noParents\":1,\"slashUrls\":1,\"pageClass\":\"RepeaterPage\",\"noGlobal\":1,\"compile\":3,\"modified\":1549814287}');
-INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('45', 'wide-basic-page', '99', '0', '0', '{\"slashUrls\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-file-word-o title\",\"compile\":3,\"label\":\"Wide basic page\",\"modified\":1564080830,\"ns\":\"ProcessWire\"}');
-INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('46', 'search', '100', '0', '0', '{\"noChildren\":1,\"noParents\":-1,\"parentTemplates\":[1],\"allowPageNum\":1,\"slashUrls\":1,\"slashPageNum\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-search title\",\"noShortcut\":1,\"compile\":3,\"modified\":1564081429,\"ns\":\"ProcessWire\"}');
+INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('45', 'wide-basic-page', '99', '0', '0', '{\"slashUrls\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-file-word-o title\",\"compile\":3,\"label\":\"Wide basic page\",\"modified\":1572888431,\"ns\":\"ProcessWire\"}');
+INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES('46', 'search', '100', '0', '0', '{\"noChildren\":1,\"noParents\":-1,\"parentTemplates\":[1],\"allowPageNum\":1,\"slashUrls\":1,\"slashPageNum\":1,\"altFilename\":\"wireframe\",\"pageLabelField\":\"fa-search title\",\"noShortcut\":1,\"compile\":3,\"modified\":1572888431,\"ns\":\"ProcessWire\"}');
 
 UPDATE pages SET created_users_id=41, modified_users_id=41, created=NOW(), modified=NOW();
 
-# --- /WireDatabaseBackup {"numTables":35,"numCreateTables":41,"numInserts":460,"numSeconds":0}
+# --- /WireDatabaseBackup {"numTables":35,"numCreateTables":41,"numInserts":464,"numSeconds":0}
