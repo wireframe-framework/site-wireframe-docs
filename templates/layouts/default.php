@@ -26,8 +26,8 @@
         <title><?= $page->get('meta_title|title') ?><?= $page->id === $home->id ? "" : " | {$site_name}" ?></title>
 
         <!-- stylesheets -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,900,900i&amp;subset=latin-ext">
+        <link rel="stylesheet" href="<?= $config->urls->resources ?>lib/fontawesome-5.12.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,900,900i|Open+Sans:300,300i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
         <?= $modules->get('SearchEngine')->renderStyles() ?>

@@ -1,3 +1,4 @@
+<?php namespace ProcessWire; ?>
 <?= $page->renderField('highlights') ?>
 
 <?php if ($page->main): ?>
